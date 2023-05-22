@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/calculator-solid.svg">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h3><i style="margin-right: 5px;" class="fa-solid fa-calculator"></i>Calculadora Padrão</h3>
+        <div class="inputArea">
+            <span class="operacaoAnterior"></span>
+            <input class="campo" type="text" value="0">
+        </div>
+        <div class="linhas">
+            <!-- <input type="button" value="%" onclick="adicionaValor(value)"> -->
+            <span onclick="adicionaValor(this.innerHTML)">%</span>
+            <span onclick="limpaValores()">C</span>
+            <span onclick="adicionaValor(this.innerHTML)">CE</span>
+            <span onclick="apagaUltimo()"><i class="fa-solid fa-delete-left"></i></span>
+        </div>
+        <div class="linhas">
+            <span onclick="adicionaValor(this.innerHTML)">1/x</span>
+            <span onclick="adicionaValor(this.innerHTML)">x²</span>
+            <span onclick="adicionaValor(this.innerHTML)">√</span>
+            <span onclick="adicionaValor(this.innerHTML)">/</span>
+        </div>
+        <div class="linhas">
+            <span onclick="adicionaValor(this.innerHTML)">7</span>
+            <span onclick="adicionaValor(this.innerHTML)">8</span>
+            <span onclick="adicionaValor(this.innerHTML)">9</span>
+            <span onclick="adicionaValor(this.innerHTML)">*</span>
+        </div>
+        <div class="linhas">
+            <span onclick="adicionaValor(this.innerHTML)">6</span>
+            <span onclick="adicionaValor(this.innerHTML)">5</span>
+            <span onclick="adicionaValor(this.innerHTML)">4</span>
+            <span onclick="adicionaValor(this.innerHTML)">-</span>
+        </div>
+        <div class="linhas">
+            <span onclick="adicionaValor(this.innerHTML)">3</span>
+            <span onclick="adicionaValor(this.innerHTML)">2</span>
+            <span onclick="adicionaValor(this.innerHTML)">1</span>
+            <span onclick="adicionaValor(this.innerHTML)">+</span>
+        </div>
+        <div class="linhas">
+            <span onclick="adicionaValor(this.innerHTML)">+/-</span>
+            <span onclick="adicionaValor(this.innerHTML)">0</span>
+            <span onclick="adicionaValor(this.innerHTML)">,</span>
+            <span onclick="resultado()">=</span>
+        </div>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</html>

@@ -1,0 +1,112 @@
+:root{
+    --primeira-cor: #6d6eb6;
+    --primeira-cor-light: #a0c1c5;
+    --segunda-cor: #a3a3a3;
+    --segunda-cor-light: #d3d3d3;
+    --terceira-cor: #455D85;
+    --cor-icones: #000;
+    --cor-fundo: #fff;
+    --cor-fundo-darker:#94bec3;
+    --cor-fundo-more-darker:#516769;
+    --cor-temperatura-min: #418F9C;
+    --cor-temperatura-max: #c72d2d;
+
+    --transicaoPadrao: 0.6s cubic-bezier(0.61, 0.11, 0.07, 1.12);
+}
+body.tema-escuro{
+    --primeira-cor: #3f3e84;
+    --primeira-cor-light: #b4bedf;
+    --segunda-cor: #c8c8c8;
+    --segunda-cor-light: #667185;
+    --terceira-cor: #c8c8c8;
+    --cor-icones: #fff;
+    --cor-fundo: #403d4d;
+    --cor-fundo-darker:#2d2b36;
+    --cor-fundo-more-darker:#000000;
+    --cor-temperatura-min: #418F9C;
+    --cor-temperatura-max: #c72d2d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:var(--primeira-cor);
+    margin: 0 4vw;
+    transition: var(--transicaoPadrao);
+}
+
+.container{
+    position: relative;
+    width: fit-content;
+    /* max-width: 410px; */
+    height: fit-content; 
+    background: var(--cor-fundo);
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: "Roboto", sans-serif;
+    transition: var(--transicaoPadrao);
+    box-shadow: 2px 2px 5px 0px black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.linhas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inputArea{
+    padding: 30px 10px;
+    text-align: end;
+    display: grid;
+}
+.inputArea span{
+    color: var(--segunda-cor);
+    margin-bottom: 10px;
+    width: 100%;
+}
+input[type="text"]{
+    font-size: 30px;
+    text-align: end;
+    width: 100%;
+}
+input[type="button"]{
+    font-size: 20px;
+    margin: 5px;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--segunda-cor-light);
+    transition: 0.1s;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    background: var(--segunda-cor);
+}
+.linhas span{
+    font-size: 20px;
+    margin: 5px;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    background: var(--segunda-cor-light);
+    transition: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linhas span:hover{
+    cursor: pointer;
+    background: var(--segunda-cor);
+}
